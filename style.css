@@ -7,6 +7,91 @@
   font-family: 'Poppins', sans-serif;
 }
 
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #00a3d7;
+    overflow: hidden;
+}
+
+.background span {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 35;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #e63b7a;
+    top: 10%;
+    left: 83%;
+    animation-duration: 79s;
+    animation-delay: -71s;
+    transform-origin: 14vw -8vh;
+    box-shadow: -40vmin 0 5.789993144158364vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #94e3fe;
+    top: 18%;
+    left: 77%;
+    animation-duration: 125s;
+    animation-delay: -30s;
+    transform-origin: 9vw -24vh;
+    box-shadow: -40vmin 0 5.166927233152261vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #0061ff;
+    top: 16%;
+    left: 48%;
+    animation-duration: 141s;
+    animation-delay: -4s;
+    transform-origin: -23vw -10vh;
+    box-shadow: 40vmin 0 5.838054519715977vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #94e3fe;
+    top: 81%;
+    left: 14%;
+    animation-duration: 17s;
+    animation-delay: -28s;
+    transform-origin: 17vw 17vh;
+    box-shadow: 40vmin 0 5.755401346824761vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #94e3fe;
+    top: 2%;
+    left: 4%;
+    animation-duration: 59s;
+    animation-delay: -46s;
+    transform-origin: 11vw -10vh;
+    box-shadow: 40vmin 0 5.1361142719507304vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #0061ff;
+    top: 76%;
+    left: 56%;
+    animation-duration: 45s;
+    animation-delay: -146s;
+    transform-origin: -15vw 15vh;
+    box-shadow: -40vmin 0 5.258285216106463vmin currentColor;
+}
+
+
 
 
 body{
@@ -14,7 +99,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #27cccc;
+    /* background: #27cccc; */
+        /* background image  */
+    /* background-image: url(images/Blob-CSS-Tricks-Armory-1.png);
+    background-size: cover; */
 
 }
 
@@ -25,6 +113,10 @@ body{
     padding: 35px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    border: 1px solid rgba(255,255,255,0.05);
     /* overflow: scroll; */
 }
 
