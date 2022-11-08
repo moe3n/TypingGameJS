@@ -146,7 +146,7 @@ body{
     position: relative;
 }
 .typing-text p span.correct{
-    color: #56964f;
+    color: rgb(79, 246, 79);
 }
 
 .typing-text p span.incorrect{
@@ -167,7 +167,7 @@ body{
     height: 3px;
     width: 100%;
     opacity: 0;
-    background: #17a2b8;
+    background: #41ff28;
     animation: blink 1s ease-in-out infinite;
 }
 
